@@ -25,13 +25,7 @@ const App = () => {
 
     return (
         <Box width="100%" height="100%" p={4}>
-            <Grid
-                container
-                style={{
-                    flexDirection: 'column',
-                    height: '100%',
-                }}
-            >
+            <Grid container style={{ height: '100%' }}>
                 {loading ? (
                     <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
                         <CircularProgress size={64} />
