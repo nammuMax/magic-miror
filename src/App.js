@@ -4,9 +4,16 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Grid from '@material-ui/core/Grid';
 import DateTime from './components/DateTime';
 import Weather from './components/Weather';
-import TPG from './components/TPG';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchOptions } from './store/appSlice';
+import logoSAE from './assets/logo-sae.png';
+import audioLogo from './assets/logo-audio.png';
+import musicLogo from './assets/logo-music.png';
+import filmLogo from './assets/logo-film.png';
+import vfxLogo from './assets/logo-vfx.png';
+import gameLogo from './assets/logo-game.png';
+import webLogo from './assets/logo-web.png';
+import mppLogo from './assets/logo-mpp.png';
 
 const App = () => {
     const dispatch = useDispatch();
@@ -17,14 +24,11 @@ const App = () => {
     }, []);
 
     return (
-        <Box p={4}>
+        <Box width="100%" height="100%" p={4}>
             <Grid
                 container
                 style={{
                     flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    alignItems: 'stretch',
-                    width: '100%',
                     height: '100%',
                 }}
             >
@@ -46,7 +50,22 @@ const App = () => {
                         </Grid>
 
                         <Grid item xs={12}>
-                            <TPG />
+                            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+                                <h1 style={{ fontSize: 64, marginBottom: 40 }}>MAGIC MIRROR</h1>
+                                <img src={logoSAE} alt="SAE Institute Genève" />
+                            </Box>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container spacing={2} style={{ paddingTop: 128, justifyContent: 'space-around' }}>
+                                <Grid item><img src={audioLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={musicLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={filmLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={vfxLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={gameLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={webLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={mppLogo} style={{ width: 64 }} alt="" /></Grid>
+                            </Grid>
                         </Grid>
                     </>
                 )}
