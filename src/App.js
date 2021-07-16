@@ -52,13 +52,13 @@ const App = () => {
 
                         <Grid item xs={12}>
                             <Grid container spacing={2} style={{ paddingTop: 128, justifyContent: 'space-around' }}>
-                                <Grid item><img src={audioLogo} style={{ width: 64 }} alt="" /></Grid>
-                                <Grid item><img src={musicLogo} style={{ width: 64 }} alt="" /></Grid>
-                                <Grid item><img src={filmLogo} style={{ width: 64 }} alt="" /></Grid>
-                                <Grid item><img src={vfxLogo} style={{ width: 64 }} alt="" /></Grid>
-                                <Grid item><img src={gameLogo} style={{ width: 64 }} alt="" /></Grid>
-                                <Grid item><img src={webLogo} style={{ width: 64 }} alt="" /></Grid>
-                                <Grid item><img src={mppLogo} style={{ width: 64 }} alt="" /></Grid>
+                                <Grid item><img src={audioLogo} style={{ width: 48 }} alt="" /></Grid>
+                                <Grid item><img src={musicLogo} style={{ width: 48 }} alt="" /></Grid>
+                                <Grid item><img src={filmLogo} style={{ width: 48 }} alt="" /></Grid>
+                                <Grid item><img src={vfxLogo} style={{ width: 48 }} alt="" /></Grid>
+                                <Grid item><img src={gameLogo} style={{ width: 48 }} alt="" /></Grid>
+                                <Grid item><img src={webLogo} style={{ width: 48 }} alt="" /></Grid>
+                                <Grid item><img src={mppLogo} style={{ width: 48 }} alt="" /></Grid>
                             </Grid>
                         </Grid>
                     </>
